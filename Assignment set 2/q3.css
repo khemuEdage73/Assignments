@@ -1,0 +1,8 @@
+div ul li{
+    display: inline;
+}
+
+
+/*  Try to find why the bullet points disappear. */
+/* because by default display is set as display : list - items
+which was creating bullet points. */
