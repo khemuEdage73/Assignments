@@ -4,8 +4,8 @@
 }
 
 .main-box{
-    background-image: url("./openbox.webp");
-    background-size: contain;
+    background-image: url("./download.jpg");
+    background-size: cover;
     height: 100vh;
 }
 
@@ -13,6 +13,7 @@
     position: fixed;
     width: 300px;
     height: 100vh;
+    left: -300px;
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 6px rgba(255, 255, 255, 0.5);
 }
@@ -60,15 +61,22 @@
 
 .menu{
     margin-top: 20px;
-    display: flex;
-    gap: 40px;
+}
+
+.menu ul{
+    padding: 0px;
+}
+.menu ul li{
+    width: 100%;
+    padding: 10px 0px;
+    box-sizing: border-box;
+    
 }
 
 .menu ul li i{
     color: white;
     font-size: 20px;
     margin-left: 30px;
-    padding-top: 20px;
 }
 .menu ul li a{
     width: 100%;
@@ -79,19 +87,35 @@
 }
 
 .menu ul li:hover{
-    box-shadow: 0 0 6px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 6px rgba(255, 255, 255, 1);
 }
 
 .social-media{
     margin: 200px 0 0px 90px;
 }
+
+.social-media ul li{
+    list-style: none;
+    display: inline;
+}
 .social-media a{
   text-decoration: none;
   color: white;
   opacity: 0.5;
+  display: inline-block;
 }
 
-.social-media a:hover{
+.social-media li a:hover{
     opacity: 1;
     transform: scale(1.2);
+}
+
+
+
+#check:checked ~.sidebar-menu{
+    left: 0px;
+}
+
+#check:checked ~.btn_one{
+    opacity: 0;
 }
