@@ -84,7 +84,7 @@ WHERE age < 30 XOR city = "Mumbai";
 
 SELECT * FROM people
 WHERE age > 30
-	 AND city = "Mumbai" OR city = "Delhi";
+	 AND (city = "Mumbai" OR city = "Delhi");
 
 
 
